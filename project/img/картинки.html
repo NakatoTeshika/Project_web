@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Картинки</title>
+
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+      <!-- менюшка в моб версии -->
+        
+        <a class="navbar-brand" href="#">GUNIC<i class="fa fa-circle"></i>RN</a>
+      </div>
+      <div class="slideshow-container">
+
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="file:///C:/Users/%D0%A1%D0%BE%D1%84%D1%8C%D1%8F/Desktop/project/img/085016%20%28%D0%A1%D1%82%D0%B8%D0%BB%D1%8C,%20%D0%BC%D1%83%D0%B7%D1%8B%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9,%20%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82,%20%D0%B3%D0%B8%D1%82%D0%B0%D1%80%D0%B0,%20%D0%B3%D1%80%D0%B8%D1%84,%20%D1%81%D1%82%D1%80%D1%83%D0%BD%D1%8B,%20%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81,%20%D1%87%D1%91%D1%80%D0%BD%D0%BE-%D0%B1%D0%B5%D0%BB%D0%BE%D0%B5%29.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="file:///C:/Users/%D0%A1%D0%BE%D1%84%D1%8C%D1%8F/Desktop/project/img/playing-piano-black-and-white-wallpaper-3.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="file:///C:/Users/%D0%A1%D0%BE%D1%84%D1%8C%D1%8F/Desktop/project/img/wpapers_ru_%D0%A7%D1%91%D1%80%D0%BD%D0%BE-%D0%B1%D0%B5%D0%BB%D0%B0%D1%8F-%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%B3%D0%B8%D1%82%D0%B0%D1%80%D0%B0.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 
+
+
